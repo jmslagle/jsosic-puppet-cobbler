@@ -4,6 +4,9 @@ Puppet module for managing Cobbler
 puppet-cobbler is a Puppet module used to deploy and manage Cobbler
 installation(s).
 
+*NOTE:*
+*This is a clone of jsosic/puppet-cobbler from https://github.com/jmslagle/jsosic-puppet-cobbler*
+
 Cobbler is a Linux installation server that allows for rapid setup of
 network installation environments. It glues together and automates many
 associated Linux tasks so you do not have to hop between lots of

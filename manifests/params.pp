@@ -52,4 +52,8 @@ class cobbler::params {
   $purge_repo    = true
   $purge_profile = true
   $purge_system  = true
+  
+  # Modules for web
+  $authn_module = 'authn_denyall'
+  $authz_module = 'authz_allowall'
 }

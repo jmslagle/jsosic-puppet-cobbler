@@ -102,6 +102,8 @@ class cobbler (
   $purge_repo         = $cobbler::params::purge_repo,
   $purge_profile      = $cobbler::params::purge_profile,
   $purge_system       = $cobbler::params::purge_system,
+  $authn_module       = $cobbler::params::authn_module,
+  $authz_module       = $cobbler::params::authz_module,
 ) inherits cobbler::params {
 
   # require apache modules

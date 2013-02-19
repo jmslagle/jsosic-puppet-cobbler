@@ -19,7 +19,7 @@
 # https://fedorahosted.org/cobbler/wiki/CobblerWithLdap
 
 [authentication]
-module = authn_denyall
+module = <%= authn_module %>
 
 # authorization: 
 # once a user has been cleared by the WebUI/XMLRPC, what can they do?
@@ -41,7 +41,7 @@ module = authn_denyall
 # https://fedorahosted.org/cobbler/wiki/AclFeature
 
 [authorization]
-module = authz_allowall
+module = <%= authz_module %>
 
 # dns:
 # chooses the DNS management engine if manage_dns is enabled

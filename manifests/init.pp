@@ -70,6 +70,9 @@
 #     repo, profiles and systems which are not managed by puppet.
 #     Default is true.
 #
+#   - $puppetca_path [type: string]
+#     The path to the puppet ca binary.
+#
 # Actions:
 #   - Install Apache
 #   - Manage Apache service
@@ -104,6 +107,7 @@ class cobbler (
   $purge_system       = $cobbler::params::purge_system,
   $authn_module       = $cobbler::params::authn_module,
   $authz_module       = $cobbler::params::authz_module,
+  $puppetca_path      = $cobbler::params::puppetca_path,
 ) inherits cobbler::params {
 
   # require apache modules

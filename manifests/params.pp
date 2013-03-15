@@ -41,6 +41,7 @@ class cobbler::params {
   $puppet_auto_setup                     = 1
   $sign_puppet_certs_automatically       = 1
   $remove_old_puppet_certs_automatically = 1
+  $puppetca_path = '/usr/bin/puppet cert'
 
   # depends on apache
   $apache_service = 'httpd'
@@ -52,7 +53,7 @@ class cobbler::params {
   $purge_repo    = true
   $purge_profile = true
   $purge_system  = true
-  
+
   # Modules for web
   $authn_module = 'authn_denyall'
   $authz_module = 'authz_allowall'
